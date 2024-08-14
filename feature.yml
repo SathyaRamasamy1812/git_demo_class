@@ -1,0 +1,7 @@
+---
+ hosts: all
+ become: true
+ become_method: sudo
+ tasks:
+ - name: "This is a dummy task"
+    yum: name=httpd state=latest
